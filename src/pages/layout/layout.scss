@@ -1,0 +1,14 @@
+@import './../../styles/_variables.scss';
+
+.layout {
+  background-color: $base-background-color;
+  width           : 100%;
+
+  &_grid-2 {
+    background: #E5E5E5;
+  }
+
+  &_grid-1 {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  }
+}

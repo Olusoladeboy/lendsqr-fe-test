@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logo.svg';
 import login_bg from '../../assets/images/pablo-sign-in.svg';
 import './login.scss';
@@ -9,6 +10,10 @@ function Login() {
     e.preventDefault();
     const visibility = !passwordVisible;
     setPasswordVisible(visibility);
+  }
+  const navigate = useNavigate();
+  const goToApp = () => {
+    navigate('/app')
   }
   return (
     <div className="login">
@@ -33,7 +38,7 @@ function Login() {
                 <span>Forgot Password</span>
               </div>
               <div className='mt-5'>
-                <button>
+                <button onClick={goToApp}>
                   Log in
                 </button>
               </div>

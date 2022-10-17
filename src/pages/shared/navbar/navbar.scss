@@ -1,0 +1,50 @@
+@import './../../../styles/_variables.scss';
+
+.navbar {
+  font-family     : 'Roboto';
+  font-style      : normal;
+  font-weight     : 400;
+  font-size       : 14px;
+  line-height     : 19px;
+  color           : #213F7D;
+  background-color: $base-background-color;
+  width           : 100%;
+  box-shadow      : 3px 0px 20px rgba(0, 0, 0, 0.04);
+
+  &_logo {
+    width: 150px;
+  }
+
+  &_wrapper {}
+
+  &_dp {
+    &_user {
+      width        : 35px;
+      height       : 35px;
+      border-radius: 50%;
+    }
+
+    &_arrow-down {
+      width: 10px;
+    }
+  }
+
+  &_input {
+    width: 300px;
+
+    input {
+      height: 35px;
+    }
+
+    button {
+      background: #39CDCC;
+      height    : 35px;
+
+      svg {
+        color: white
+      }
+    }
+  }
+
+
+}
